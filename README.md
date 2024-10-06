@@ -1,0 +1,2 @@
+# lctranslate
+LangChain Translate App
