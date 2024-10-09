@@ -14,6 +14,8 @@ source_languages = [
     "丁寧な日本語",
     "2チャンネルまとめ風",
     "うる星やつらのラム風",
+    "るろうに剣心の緋村剣心風",
+    "天才バカボンのバカボンのパパ風",
 ]
 
 
@@ -57,7 +59,7 @@ with row1_left:
     )
 
 with row1_right:
-    target_languages = [x for x in source_languages if x != source]
+    target_languages = [lang for lang in source_languages if lang != source]
     index = 0
     if "target" in st.session_state and st.session_state.target != source:
         index = target_languages.index(st.session_state.target)
